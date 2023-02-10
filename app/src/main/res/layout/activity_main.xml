@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/headline_txt"
+        android:textColor="@color/black"
+        android:text="MEDIA PLAYER"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:padding="18dp"
+        android:layout_centerHorizontal="true"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/button_layout"
+        >
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_baseline_pause_circle_filled_24"
+            android:layout_centerVertical="true"
+            android:id="@+id/pause_btn"
+            />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_baseline_play_circle_filled_24"
+            android:layout_centerVertical="true"
+            android:id="@+id/play_btn"
+            android:layout_toEndOf="@id/pause_btn"
+            />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_baseline_stop_circle_24"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/play_btn"
+            android:id="@+id/stop_btn"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_layout"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:textSize="18dp"
+        android:textColor="@color/grey"
+        android:textStyle="italic"
+        android:id="@+id/status_txt"
+        android:textAlignment="center"
+        />
+
+</RelativeLayout>
